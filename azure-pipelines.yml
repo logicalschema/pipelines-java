@@ -20,7 +20,7 @@ steps:
 
 - task: Maven@4
   inputs:
-    jdkDirectory: ${JAVA_HOME}
+    jdkDirectory: '${JAVA_HOME}'
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
