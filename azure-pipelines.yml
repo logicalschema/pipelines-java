@@ -9,6 +9,14 @@ trigger:
 pool: self-hosted-pool
 
 steps:
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      JAVA_HOME=$(JAVA_HOME)
 - task: JavaToolInstaller@0
   inputs:
     versionSpec: '11'
