@@ -18,6 +18,12 @@ steps:
       export JAVA_HOME=$(JAVA_HOME)
       export PATH=$PATH:$JAVA_HOME/bin/
 
+- task: JavaToolInstaller@0
+ inputs:
+   versionSpec: '11'
+   jdkArchitectureOption: 'x64'
+   jdkSourceOption: 'PreInstalled'
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
