@@ -17,6 +17,7 @@ steps:
       # Write your commands here
       
       export JAVA_HOME=$(JAVA_HOME)
+      export PATH=$PATH:$JAVA_HOME/bin/
 
 
 - task: Maven@3
