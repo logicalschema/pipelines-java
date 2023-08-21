@@ -16,7 +16,7 @@ steps:
     script: |
       # Write your commands here
       
-      JAVA_HOME=$(JAVA_HOME)
+      export JAVA_HOME=$(JAVA_HOME)
 
 
 - task: Maven@3
